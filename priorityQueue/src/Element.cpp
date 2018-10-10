@@ -5,7 +5,4 @@ Element::Element()
     //ctor
 }
 
-Element::~Element()
-{
-    //dtor
-}
+

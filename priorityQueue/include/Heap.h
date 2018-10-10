@@ -6,11 +6,13 @@ class Heap
 {
     public:
         Heap();
-        virtual ~Heap();
 
     protected:
 
     private:
+        int capacity;
+        int size;
+        Element[] H;
 };
 
 #endif // HEAP_H
