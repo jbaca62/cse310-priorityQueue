@@ -6,13 +6,16 @@ class Heap
 {
     public:
         Heap();
+        static Heap initialize(int n);
+        static void printHeap(Heap heap);
+
 
     protected:
 
     private:
         int capacity;
         int size;
-        Element[] H;
+        Element *H;
 };
 
 #endif // HEAP_H

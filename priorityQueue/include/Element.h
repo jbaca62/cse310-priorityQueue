@@ -6,11 +6,12 @@ class Element
 {
     public:
         Element();
-        ~Element();
+
 
     protected:
 
     private:
+        int key;
 };
 
 #endif // ELEMENT_H
