@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1539511677 source:c:\users\bacaj\documents\github\cse310-priorityqueue\priorityqueue\src\element.cpp
+	"Element.h"
+
+1539511220 c:\users\bacaj\documents\github\cse310-priorityqueue\priorityqueue\include\element.h
+
+1539938124 source:c:\users\bacaj\documents\github\cse310-priorityqueue\priorityqueue\src\heap.cpp
+	"Heap.h"
+	<iostream>
+
+1539937935 c:\users\bacaj\documents\github\cse310-priorityqueue\priorityqueue\include\heap.h
+	"Element.h"
+
+1539937079 source:c:\users\bacaj\documents\github\cse310-priorityqueue\priorityqueue\util.cpp
+	<iostream>
+	<fstream>
+	"Element.h"
+
+1539938103 source:c:\users\bacaj\documents\github\cse310-priorityqueue\priorityqueue\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	"util.h"
+	"Heap.h"
+	"Element.h"
+
+1539933650 c:\users\bacaj\documents\github\cse310-priorityqueue\priorityqueue\include\util.h
+	"Element.h"
+

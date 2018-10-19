@@ -1,13 +1,26 @@
 #ifndef HEAP_H
 #define HEAP_H
 
+#include "Element.h"
+
 
 class Heap
 {
     public:
         Heap();
+        Heap(int, int, Element*);
+        void build_heap(Element*, int, int);
         static Heap initialize(int n);
-        static void printHeap(Heap heap);
+        void max_heapify(int);
+        void print_heap();
+        void increase_key(int, int, int);
+        void heap_insert(int, int);
+        void delete_max(int);
+        bool add_element(Element, int);
+        void set_H(Element*);
+        static int parent(int);
+        static int left(int);
+        static int right(int);
 
 
     protected:

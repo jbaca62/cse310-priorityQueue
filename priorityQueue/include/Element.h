@@ -6,6 +6,9 @@ class Element
 {
     public:
         Element();
+        Element(int);
+        int get_key();
+        void set_key(int);
 
 
     protected:

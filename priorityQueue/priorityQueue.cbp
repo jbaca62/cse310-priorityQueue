@@ -36,9 +36,11 @@
 		</Compiler>
 		<Unit filename="include/Element.h" />
 		<Unit filename="include/Heap.h" />
+		<Unit filename="include/util.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Element.cpp" />
 		<Unit filename="src/Heap.cpp" />
+		<Unit filename="util.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
