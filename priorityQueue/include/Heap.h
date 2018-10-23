@@ -15,9 +15,10 @@ class Heap
         void print_heap();
         void increase_key(int, int, int);
         void heap_insert(int, int);
-        void delete_max(int);
+        Element delete_max(int);
         bool add_element(Element, int);
         void set_H(Element*);
+        int get_capacity();
         static int parent(int);
         static int left(int);
         static int right(int);

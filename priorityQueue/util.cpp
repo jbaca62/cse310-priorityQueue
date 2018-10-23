@@ -55,10 +55,15 @@ Element* read_input_text(){
     Element* e = new Element[a_size + 1];
     e[0].set_key(a_size);
     for(int i = 1; i <= a_size; i++){
+        if(text_file.eof()){
+            cout << "Sorry!!! It cannot be done. The number of elements in the file is less than as specified in the beginning of the file." << endl;
+            return 0;
+        }
         int x;
         text_file >> x;
         e[i] = Element(x);
     }
+    text_file.close();
     return e;
 
 }

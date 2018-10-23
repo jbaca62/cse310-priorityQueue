@@ -1,5 +1,6 @@
 #include "Heap.h"
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -72,8 +73,11 @@ void Heap::print_heap(){
 }
 
 void Heap::increase_key(int i, int k, int f){
+    if(size < i){
+        printf("There are only %d elements in the heap. Hence this operation cannot be completed.\n", size);
+    }
     if(k < H[i].get_key()){
-        printf("new key is smaller than current key");
+       // printf("new key is smaller than current key");
     }
     if(f == 1){
         print_heap();
@@ -95,26 +99,39 @@ void Heap::heap_insert(int k, int flag){
         print_heap();
     }
     size++;
-    H[size] = Element(-2147483646);
+    if(this->size > this->capacity){
+        this->capacity = pow(2, floor(log(size)/log(2)) + 1);
+        Element* e = new Element[capacity];
+        for(int i = 1; i <= size - 1; i++){
+            e[i] = H[i];
+        }
+        delete H;
+        this->H = e;
+    }
+    H[size] = Element(
+                       );
     this->increase_key(size, k, 0);
     if(flag == 1){
         print_heap();
     }
 }
 
-void Heap::delete_max(int flag){
+Element Heap::delete_max(int flag){
     if(flag == 1){
         this->print_heap();
     }
     if(size < 1){
-        cout << "heap underflow" << endl;
+        cout << "There are no elements in the heap to delete." << endl;
+        return Element(-2147483646);
     }
+    Element e = H[1];
     H[1] = H[size];
     size--;
     this->max_heapify(1);
     if(flag == 1){
         this->print_heap();
     }
+    return e;
 }
 
 bool Heap::add_element(Element newElement, int i){
@@ -142,4 +159,8 @@ int Heap::right(int i){
 
 void Heap::set_H(Element* e){
     H = e;
+}
+
+int Heap::get_capacity(){
+    return capacity;
 }

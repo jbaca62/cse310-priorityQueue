@@ -4,19 +4,20 @@
 
 1539511220 c:\users\bacaj\documents\github\cse310-priorityqueue\priorityqueue\include\element.h
 
-1539938124 source:c:\users\bacaj\documents\github\cse310-priorityqueue\priorityqueue\src\heap.cpp
+1540188460 source:c:\users\bacaj\documents\github\cse310-priorityqueue\priorityqueue\src\heap.cpp
 	"Heap.h"
 	<iostream>
+	<math.h>
 
-1539937935 c:\users\bacaj\documents\github\cse310-priorityqueue\priorityqueue\include\heap.h
+1540188399 c:\users\bacaj\documents\github\cse310-priorityqueue\priorityqueue\include\heap.h
 	"Element.h"
 
-1539937079 source:c:\users\bacaj\documents\github\cse310-priorityqueue\priorityqueue\util.cpp
+1540188969 source:c:\users\bacaj\documents\github\cse310-priorityqueue\priorityqueue\util.cpp
 	<iostream>
 	<fstream>
 	"Element.h"
 
-1539938103 source:c:\users\bacaj\documents\github\cse310-priorityqueue\priorityqueue\main.cpp
+1540188573 source:c:\users\bacaj\documents\github\cse310-priorityqueue\priorityqueue\main.cpp
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
